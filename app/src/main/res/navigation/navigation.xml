@@ -17,5 +17,10 @@
     <fragment
         android:id="@+id/fragmentB"
         android:name="com.example.capitulo5.FragmentB"
-        android:label="FragmentB" />
+        android:label="FragmentB" >
+        <argument
+            android:name="name"
+            app:argType="string"
+            android:defaultValue="Estevão Nunes Agostini" />
+    </fragment>
 </navigation>

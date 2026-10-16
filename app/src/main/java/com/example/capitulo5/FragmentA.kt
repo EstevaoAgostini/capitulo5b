@@ -28,8 +28,13 @@ class FragmentA : Fragment() {
     }
 
     private fun initListeners() {
+
+        val bundle = Bundle().apply {
+            putString("name", "Estevão Agostini")
+        }
+
         binding.button.setOnClickListener {
-            findNavController().navigate(R.id.action_fragmentA2_to_fragmentB)
+            findNavController().navigate(R.id.action_fragmentA2_to_fragmentB, bundle)
 
         }
     }
